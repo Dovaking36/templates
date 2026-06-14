@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практические задания по CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Практикум по вёрстке</h1>
+
+<!-- ЗАДАЧА 1: Секция с 8 карточками одинаковой ширины -->
+<section class="task">
+    <h2>Задача 1. Карточки товаров (8 штук)</h2>
+    <div class="cards-grid">
+        <!-- 8 одинаковых карточек -->
+        <div class="card">
+            <h3>Название товара 1</h3>
+            <img src="https://placehold.co/300x200" alt="Фото товара">
+            <p>Это длинный текст описания. Товар очень качественный, но текст может быть любой длины, чтобы проверить, что карточки не разъезжаются.</p>
+            <button>Купить</button>
+        </div>
+        <div class="card">
+            <h3>Товар 2</h3>
+            <img src="https://placehold.co/300x200" alt="Фото товара">
+            <p>Краткое описание. Несмотря на разную длину, карточки остаются одной высоты благодаря flexbox.</p>
+            <button>Купить</button>
+        </div>
+        <div class="card">
+            <h3>Супер-пупер товар 3</h3>
+            <img src="https://placehold.co/300x200" alt="Фото товара">
+            <p>Очень-очень длинное описание, которое может занимать несколько строк. Но все карточки будут выглядеть ровно и аккуратно.</p>
+            <button>В корзину</button>
+        </div>
+        <div class="card">
+            <h3>Изделие 4</h3>
+            <img src="https://placehold.co/300x200" alt="Фото товара">
+            <p>Описание четвёртого товара. Здесь может быть что угодно. Главное, что кнопка всегда внизу.</p>
+            <button>Купить</button>
+        </div>
+        <div class="card">
+            <h3>Продукт 5</h3>
+            <img src="https://placehold.co/300x200" alt="Фото товара">
+            <p>Ещё один товар с длинным текстом, чтобы проверить, что карточки выравниваются по сетке и не ломаются.</p>
+            <button>Подробнее</button>
+        </div>
+        <div class="card">
+            <h3>Вещь 6</h3>
+            <img src="https://placehold.co/300x200" alt="Фото товара">
+            <p>Кратко.</p>
+            <button>Купить</button>
+        </div>
+        <div class="card">
+            <h3>Товар 7</h3>
+            <img src="https://placehold.co/300x200" alt="Фото товара">
+            <p>Описание седьмого товара, нормальной длины.</p>
+            <button>Купить</button>
+        </div>
+        <div class="card">
+            <h3>Товар 8</h3>
+            <img src="https://placehold.co/300x200" alt="Фото товара">
+            <p>Последний товар в нашем каталоге. Отличное качество по низкой цене.</p>
+            <button>Купить</button>
+        </div>
+    </div>
+</section>
+
+<!-- ЗАДАЧА 2: Демонстрация display -->
+<section class="task">
+    <h2>Задача 2. Значения display</h2>
+    <div class="demo-display">
+        <div class="display-item block">
+            <strong>display: block</strong> – занимает всю ширину, перенос строки.
+        </div>
+        <div class="display-item inline">
+            <strong>display: inline</strong> – не переносит строку, ширина по содержимому, нельзя задать margin/padding по вертикали.
+        </div>
+        <div class="display-item inline-block">
+            <strong>display: inline-block</strong> – как inline, но можно задать ширину/высоту и вертикальные отступы.
+        </div>
+        <div class="display-item none">
+            <strong>display: none</strong> – элемент скрыт и не занимает место.
+        </div>
+        <p style="margin-top: 10px;">Обратите внимание: элемент с <code>display: none</code> не виден и не влияет на расположение соседей.</p>
+    </div>
+</section>
+
+<!-- ЗАДАЧА 3: Переполнение (overflow) -->
+<section class="task">
+    <h2>Задача 3. Overflow: visible, hidden, scroll, auto</h2>
+    <div class="overflow-container">
+        <div class="overflow-box visible">
+            <strong>visible</strong><br>
+            Этот текст выходит за границы блока, потому что он очень длинный и не помещается. Видно всё, даже за пределами.
+        </div>
+        <div class="overflow-box hidden">
+            <strong>hidden</strong><br>
+            Этот текст тоже не помещается, но всё, что выходит за границы, скрыто. Вы не увидите лишнее. 1111111111111111111111111111111111111111111
+        </div>
+        <div class="overflow-box scroll">
+            <strong>scroll</strong><br>
+            Здесь всегда появляются полосы прокрутки, даже если текст помещается. Это позволяет контролировать внешний вид.
+        </div>
+        <div class="overflow-box auto">
+            <strong>auto</strong><br>
+            Полосы прокрутки появляются только при необходимости. Сейчас текста много, поэтому они есть.
+        </div>
+    </div>
+</section>
+
+<!-- ЗАДАЧА 4: Сравнение content-box и border-box -->
+<section class="task">
+    <h2>Задача 4. content-box vs border-box</h2>
+    <div class="box-model-compare">
+        <div class="box content-box">
+            <strong>content-box</strong><br>
+            width: 200px<br>
+            padding: 20px<br>
+            border: 5px solid red<br>
+            Итоговая ширина: 200 + 40 + 10 = <strong>250px</strong>
+        </div>
+        <div class="box border-box">
+            <strong>border-box</strong><br>
+            width: 200px<br>
+            padding: 20px<br>
+            border: 5px solid blue<br>
+            Итоговая ширина: <strong>200px</strong> (padding и border внутри)
+        </div>
+    </div>
+    <p>Оба блока имеют одинаковые CSS-свойства (width, padding, border), но разные box-sizing. Визуально блоки отличаются по ширине.</p>
+</section>
+
+<!-- ЗАДАЧА 5: Каталог (аналог задачи 1, но более строгий) -->
+<section class="task">
+    <h2>Задача 5. Каталог – устойчивый к разной длине контента</h2>
+    <div class="catalog">
+        <div class="catalog-item">
+            <h3>Стул</h3>
+            <img src="https://placehold.co/300x200" alt="Стул">
+            <p>Удобный стул для дома и офиса. Регулировка высоты, мягкое сиденье.</p>
+            <button>Заказать</button>
+        </div>
+        <div class="catalog-item">
+            <h3>Письменный стол с очень длинным названием для проверки</h3>
+            <img src="https://placehold.co/300x200" alt="Стол">
+            <p>Большой письменный стол, подходит для компьютера, много места, прочные ножки, экологичный материал. Доставка в день заказа.</p>
+            <button>В корзину</button>
+        </div>
+        <div class="catalog-item">
+            <h3>Кресло</h3>
+            <img src="https://placehold.co/300x200" alt="Кресло">
+            <p>Компьютерное кресло с ортопедической спинкой.</p>
+            <button>Купить</button>
+        </div>
+        <div class="catalog-item">
+            <h3>Лампа</h3>
+            <img src="https://placehold.co/300x200" alt="Лампа">
+            <p>Светодиодная настольная лампа, 3 режима яркости.</p>
+            <button>Купить</button>
+        </div>
+    </div>
+    <p>Все карточки каталога выровнены по сетке, кнопки прижаты к низу, изображения не вылезают.</p>
+</section>
+
+</body>
+</html>
