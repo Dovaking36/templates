@@ -1,0 +1,29 @@
+body{
+    font-size: 24pt;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aquamarine;
+    text-align: center;
+    border: 2px solid rgb(183, 238, 170);
+}
+input{
+    width: 70%;            
+    padding: 10px;
+    border: 1px solid #070606;
+    border-radius: 24px;
+    background-color: #9aee39;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    font-size: 22pt;
+}
+select{
+    width: 70%;            
+    padding: 10px;
+    border: 1px solid #070606;
+    border-radius: 6px;
+    background-color: #9aee39;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    font-size: 22pt;
+}
+
+p{
+    font-size: 22pt;
+}

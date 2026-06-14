@@ -1,0 +1,120 @@
+
+:root {
+    --card-border: 2px solid #000;
+    --card-radius: 12px;
+    --transition: all 0.2s ease-in-out;
+    --gap: 20px;
+
+
+    --usercard-bg: azure;
+    --usercard-hover-bg: rebeccapurple;
+    --productcard-bg: rebeccapurple;
+    --productcard-hover-bg: azure;
+
+
+    --text-dark: #111;
+    --text-light: #f5f5f5;
+}
+
+
+.card-base {
+    border: var(--card-border);
+    border-radius: var(--card-radius);
+    width: 30%;
+    min-width: 220px;          
+    padding: 16px;
+    transition: var(--transition);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.card-base img {
+    display: block;
+    width: 50%;
+    margin: 0 auto 12px auto;
+    border-radius: 8px;
+}
+
+
+.usercard {
+    background-color: var(--usercard-bg);
+    color: var(--text-dark);
+
+}
+
+.usercard:hover {
+    background-color: var(--usercard-hover-bg);
+    color: var(--text-light);
+    transform: translateY(-4px);    
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+
+.productcard {
+    background-color: var(--productcard-bg);
+    color: var(--text-light);
+}
+
+.productcard:hover {
+    background-color: var(--productcard-hover-bg);
+    color: var(--text-dark);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+
+.usercard input,
+.productcard input {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+
+.usercard input {
+    background-color: var(--usercard-bg);
+    color: var(--text-dark);
+    border: 1px solid #ccc;
+}
+.usercard input:hover {
+    background-color: var(--usercard-hover-bg);
+    color: var(--text-light);
+    border-color: currentColor;
+}
+
+
+.productcard input {
+    background-color: var(--productcard-bg);
+    color: var(--text-light);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+.productcard input:hover {
+    background-color: var(--productcard-hover-bg);
+    color: var(--text-dark);
+    border-color: #aaa;
+}
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    justify-content: center;   
+    align-items: stretch;      
+    padding: var(--gap);
+}
+
+
+hr {
+    margin: 24px 0;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #ccc, #888, #ccc);
+}
+
