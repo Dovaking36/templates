@@ -1,0 +1,190 @@
+/* Простые стили для всех задач */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f0f2f5;
+}
+
+/* ===== ЗАДАЧА 1: МЕНЮ ===== */
+.task-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.task-1 button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* ===== ЗАДАЧА 2: ЦЕНТРИРОВАНИЕ ===== */
+.task-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background: #e8edf5;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.centered-block {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.centered-block button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* ===== ЗАДАЧА 3: СЕТКА КАРТОЧЕК ===== */
+.task-3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #e8edf5;
+    padding: 30px 20px;
+    border-radius: 10px;
+    width: 80px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ===== ЗАДАЧА 4: КОМАНДА ===== */
+.task-4 {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.task-4 h2 {
+    margin-bottom: 20px;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+}
+
+.team-card div:first-child {
+    font-size: 40px;
+}
+
+.team-card button {
+    background: transparent;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+    padding: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.team-card button:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* ===== ЗАДАЧА 5: ПАНЕЛЬ ДЕЙСТВИЙ ===== */
+.task-5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+.task-5 h3 {
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    background: #e8edf5;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.buttons .primary {
+    background: #2563eb;
+    color: white;
+}
+
+.buttons .primary:hover {
+    background: #1d4ed8;
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+@media (max-width: 700px) {
+    .task-1 {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .task-5 {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
