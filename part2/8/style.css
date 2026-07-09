@@ -1,0 +1,192 @@
+/* Минимальные стили — только для flex-компоновки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Отступ между задачами */
+.task {
+    margin-bottom: 30px;
+}
+
+/* ===== Задача 1. Шапка ===== */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: #eee; /* только для наглядности, можно убрать */
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.search {
+    flex: 1;
+    min-width: 150px;
+}
+
+.search input {
+    width: 100%;
+    padding: 4px;
+}
+
+/* ===== Задача 2. Панель ===== */
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.panel-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* ===== Задача 3. Карточка ===== */
+.card {
+    max-width: 320px;
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+
+.card-top {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.card-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.card-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* ===== Задача 4. Личный кабинет ===== */
+.dashboard {
+    display: flex;
+    gap: 20px;
+    border: 1px solid #ccc;
+}
+
+.sidebar {
+    flex: 0 0 180px;
+    padding: 10px;
+}
+
+.sidebar-menu {
+    list-style: none;
+}
+
+.sidebar-menu li {
+    padding: 6px 0;
+}
+
+.content {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.stats {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.task-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.task-list li {
+    padding: 6px;
+    background: #f5f5f5;
+}
+
+/* ===== Задача 5. Строки ===== */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.row-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.row-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Кнопки и прочее — только база */
+button, .btn, .btn-small, .btn-login {
+    padding: 4px 10px;
+    cursor: pointer;
+}

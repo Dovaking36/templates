@@ -1,0 +1,215 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #fafafa;
+}
+
+.task {
+    margin-bottom: 40px;
+    background: white;
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.catalog .card {
+    background: #e9edf2;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+}
+
+.gallery-item {
+    background: #d4dce6;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+
+.homepage {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.hp-header {
+    background: #2c3e50;
+    color: white;
+    padding: 16px;
+    text-align: center;
+}
+
+.hp-banner {
+    background: #3498db;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.hp-advantages {
+    background: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+.hp-advantages::before {
+    content: "Преимущество 1";
+    background: #bdc3c7;
+    padding: 12px;
+}
+.hp-advantages::after {
+    content: "Преимущество 2";
+    background: #bdc3c7;
+    padding: 12px;
+}
+.hp-advantages :nth-child(3) {
+    content: "Преимущество 3";
+    background: #bdc3c7;
+    padding: 12px;
+}
+
+.hp-advantages > * {
+    background: #bdc3c7;
+    padding: 12px;
+    text-align: center;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 12px;
+}
+
+.dash-nav {
+    grid-row: 1 / -1;
+    background: #2c3e50;
+    color: white;
+    padding: 16px;
+}
+
+.dash-header {
+    grid-column: 2 / 3;
+    background: #ecf0f1;
+    padding: 12px;
+}
+
+.dash-stats {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.stat-card {
+    background: #e9edf2;
+    padding: 16px;
+    text-align: center;
+}
+
+.dash-table {
+    grid-column: 2 / 3;
+    background: #f5f6f8;
+    padding: 20px;
+    min-height: 100px;
+}
+
+.dash-notifications {
+    grid-column: 2 / 3;
+    background: #fafbfc;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.dash-chart {
+    grid-column: 2 / 3;
+    background: #eef1f5;
+    padding: 30px;
+    text-align: center;
+    min-height: 120px;
+}
+
+
+.grid-flex-page {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 12px;
+}
+
+.gf-header {
+    grid-column: 1 / -1;
+    background: #34495e;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.gf-sidebar {
+    background: #ecf0f1;
+    padding: 16px;
+}
+
+.gf-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+    padding: 4px;
+}
+
+.gf-card {
+    background: #e9edf2;
+    padding: 16px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+}
+
+.gf-card span {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.gf-footer {
+    grid-column: 1 / -1;
+    background: #2c3e50;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}

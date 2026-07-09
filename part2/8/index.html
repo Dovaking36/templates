@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox — компоновка интерфейса</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+    <section class="task">
+        <h2>Задача 1. Шапка сайта</h2>
+        <header class="header">
+            <div class="logo">Логотип</div>
+            <nav class="menu">
+                <a href="#">Главная</a>
+                <a href="#">Каталог</a>
+                <a href="#">О нас</a>
+                <a href="#">Контакты</a>
+            </nav>
+            <div class="search">
+                <input type="text" placeholder="Поиск..." />
+            </div>
+            <button class="btn-login">Вход</button>
+        </header>
+    </section>
+
+    <section class="task">
+        <h2>Задача 2. Панель управления</h2>
+        <div class="panel">
+            <h3 class="panel-title">Управление заказами</h3>
+            <div class="panel-actions">
+                <button class="btn">Добавить</button>
+                <button class="btn">Изменить</button>
+                <button class="btn">Удалить</button>
+                <input type="text" placeholder="Поиск по заказам..." />
+            </div>
+        </div>
+    </section>
+
+
+    <section class="task">
+        <h2>Задача 3. Карточка товара</h2>
+        <div class="card">
+            <div class="card-top">
+                <img src="image.png" alt="Товар" class="card-img" />
+                <div class="card-info">
+                    <h4 class="card-title">Смартфон XYZ</h4>
+                    <p class="card-desc">Отличный смартфон с большим экраном и мощной батареей.</p>
+                    <div class="card-rating">★★★★☆ (4.2)</div>
+                </div>
+            </div>
+            <div class="card-bottom">
+                <span class="card-price">29 990 ₽</span>
+                <div class="card-actions">
+                    <button class="btn">В корзину</button>
+                    <button class="btn">Избранное</button>
+                </div>
+            </div>
+            <div class="card-meta">
+                <span>Артикул: 12345</span>
+                <span>В наличии</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="task">
+        <h2>Задача 4. Личный кабинет</h2>
+        <div class="dashboard">
+
+            <aside class="sidebar">
+                <ul class="sidebar-menu">
+                    <li><a href="#" class="active">Профиль</a></li>
+                    <li><a href="#">Заказы</a></li>
+                    <li><a href="#">Избранное</a></li>
+                    <li><a href="#">Настройки</a></li>
+                    <li><a href="#">Выход</a></li>
+                </ul>
+            </aside>
+
+            <main class="content">
+                <div class="content-top">
+                    <h3>Мой профиль</h3>
+                    <button class="btn">Редактировать</button>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-val">12</span>
+                        <span class="stat-label">Заказов</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-val">4</span>
+                        <span class="stat-label">В обработке</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-val">8</span>
+                        <span class="stat-label">Доставлено</span>
+                    </div>
+                </div>
+                <ul class="task-list">
+                    <li>Заказ #1001 — доставка 12.05</li>
+                    <li>Заказ #1002 — ожидает оплату</li>
+                    <li>Заказ #1003 — выполнен</li>
+                    <li>Заказ #1004 — в пути</li>
+                </ul>
+            </main>
+        </div>
+    </section>
+
+
+    <section class="task">
+        <h2>Задача 5. Строки интерфейса</h2>
+
+
+        <div class="row row-cart">
+            <div class="row-left">
+                <span class="row-name">Наушники Pro</span>
+                <span class="row-qty">× 2</span>
+            </div>
+            <div class="row-right">
+                <span class="row-price">7 980 ₽</span>
+                <button class="btn-small">Удалить</button>
+            </div>
+        </div>
+
+
+        <div class="row row-user">
+            <div class="row-left">
+                <span class="row-name">Анна Иванова</span>
+                <span class="row-role">администратор</span>
+            </div>
+            <div class="row-right">
+                <span class="row-status online">Онлайн</span>
+                <button class="btn-small">Написать</button>
+            </div>
+        </div>
+
+
+        <div class="row row-notification">
+            <div class="row-left">
+                <span class="row-icon">📬</span>
+                <span class="row-name">Новое сообщение от поддержки</span>
+            </div>
+            <div class="row-right">
+                <span class="row-time">5 мин назад</span>
+                <button class="btn-small">Прочитать</button>
+            </div>
+        </div>
+
+
+        <div class="row row-order">
+            <div class="row-left">
+                <span class="row-name">Заказ №2056</span>
+                <span class="row-date">от 10.05.2026</span>
+            </div>
+            <div class="row-right">
+                <span class="row-status delivered">Доставлен</span>
+                <span class="row-price">4 230 ₽</span>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
