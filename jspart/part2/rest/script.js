@@ -1,6 +1,4 @@
-// ==============================
-// ЗАДАЧА 2: Таблица умножения
-// ==============================
+
 const numInput = document.getElementById('numInput');
 const genTableBtn = document.getElementById('genTableBtn');
 const tableResult = document.getElementById('tableResult');
@@ -22,9 +20,7 @@ genTableBtn.addEventListener('click', () => {
     tableResult.textContent = generateMultiplicationTable(num);
 });
 
-// ==============================
-// ЗАДАЧА 3: Генератор карточек товаров
-// ==============================
+
 const products = ['Ноутбук', 'Мышь', 'Клавиатура', 'Монитор'];
 const generateCardsBtn = document.getElementById('generateCardsBtn');
 const cardsContainer = document.getElementById('cardsContainer');
@@ -51,9 +47,7 @@ generateCardsBtn.addEventListener('click', () => {
     renderCards(products);
 });
 
-// ==============================
-// ЗАДАЧА 4: Список чисел
-// ==============================
+
 const numberInput = document.getElementById('numberInput');
 const addNumberBtn = document.getElementById('addNumberBtn');
 const numberList = document.getElementById('numberList');
@@ -103,9 +97,7 @@ addNumberBtn.addEventListener('click', () => {
     numberInput.value = '';
 });
 
-// ==============================
-// ЗАДАЧА 5: Проверка пароля
-// ==============================
+
 const passwordInput = document.getElementById('passwordInput');
 const checkPasswordBtn = document.getElementById('checkPasswordBtn');
 const passwordResult = document.getElementById('passwordResult');
@@ -133,9 +125,6 @@ checkPasswordBtn.addEventListener('click', () => {
     }
 });
 
-// ==============================
-// ЗАДАЧА 6: Генератор списка пунктов меню
-// ==============================
 const menu = ['Главная', 'Каталог', 'О нас', 'Контакты'];
 const generateMenuBtn = document.getElementById('generateMenuBtn');
 const menuNav = document.getElementById('menuNav');
@@ -154,9 +143,6 @@ generateMenuBtn.addEventListener('click', () => {
     menuNav.innerHTML = generateMenuHTML(menu);
 });
 
-// ==============================
-// ЗАДАЧА 7: Область видимости
-// ==============================
 const scopeDemoBtn = document.getElementById('scopeDemoBtn');
 const scopeOutput = document.getElementById('scopeOutput');
 
