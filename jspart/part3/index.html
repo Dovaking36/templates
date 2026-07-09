@@ -1,25 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Arrays</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js" defer></script>
-    </head>
-    <body>
-        <div class="task-container">
-            <h1>Task 1: Catalog</h1>
-            <ol id="catalog">
-                
-            </ol>
-            <input type="button" value="Add Product" id="addProductBtn">
-        </div>
-        <div class="task-container">
-            <h1>Task 2: Filter-Search</h1>
-            <input type="text" id="searchInput" placeholder="Search products...">
-            <input type="button" value="Filter" id="filterBtn">
-            <ul id="filteredProducts">
-            </ul>
-        </div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Arrays</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="task-container">
+      <h1>Task 1: Catalog</h1>
+      <ol id="catalog"></ol>
+      <input type="button" value="Add Product" id="addProductBtn" />
+    </div>
+    <div class="task-container">
+      <h1>Task 2: Filter-Search</h1>
+      <input type="text" id="searchInput" placeholder="Search products..." />
+      <input type="button" value="Filter" id="filterBtn" />
+      <ul id="filteredProducts"></ul>
+    </div>
+    <div class="task-container">
+      <h1>Task 3: Find User by ID</h1>
+      <input type="number" id="userIdInput" placeholder="User ID" />
+      <input type="button" value="Find" id="findUserBtn" />
+      <div id="userResult" class="result-block"></div>
+    </div>
+    <div class="task-container">
+      <h1>Task 4: Prices</h1>
+      <input type="button" value="Show prices" id="showPricesBtn" />
+      <div id="pricesResult" class="result-block"></div>
+    </div>
+    <div class="task-container">
+      <h1>Task 5: Tasks</h1>
+      <input type="button" value="All" id="showAllTasksBtn" />
+      <input type="button" value="Completed" id="showCompletedBtn" />
+      <input type="button" value="Pending" id="showPendingBtn" />
+      <ul id="tasksList"></ul>
+    </div>
+    <div class="task-container">
+      <h1>Task 6: Cart</h1>
+      <ul id="cartItems"></ul>
+      <div id="cartSummary" class="result-block"></div>
+    </div>
+    <div class="task-container">
+      <h1>Task 7: Sort</h1>
+      <input type="button" value="Default" id="sortDefaultBtn" />
+      <input type="button" value="Ascending" id="sortAscBtn" />
+      <input type="button" value="Descending" id="sortDescBtn" />
+      <ul id="sortedProductsList"></ul>
+    </div>
+  </body>
 </html>
