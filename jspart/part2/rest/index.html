@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика JS (задачи 2–7)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Практические задачи по JavaScript</h1>
+    </header>
+
+    <main>
+        <!-- ЗАДАЧА 2: Таблица умножения -->
+        <section id="task2">
+            <h2>Задача 2. Таблица умножения</h2>
+            <div class="task-body">
+                <input type="number" id="numInput" placeholder="Введите число">
+                <button id="genTableBtn">Показать таблицу</button>
+                <div id="tableResult" class="result-block"></div>
+            </div>
+        </section>
+
+        <!-- ЗАДАЧА 3: Генератор карточек товаров -->
+        <section id="task3">
+            <h2>Задача 3. Генератор карточек товаров</h2>
+            <div class="task-body">
+                <button id="generateCardsBtn">Сгенерировать карточки</button>
+                <div id="cardsContainer" class="cards-container"></div>
+            </div>
+        </section>
+
+        <!-- ЗАДАЧА 4: Список чисел -->
+        <section id="task4">
+            <h2>Задача 4. Список чисел</h2>
+            <div class="task-body">
+                <input type="number" id="numberInput" placeholder="Введите число">
+                <button id="addNumberBtn">Добавить</button>
+                <div class="stats">
+                    <span>Сумма: <b id="sumDisplay">0</b></span>
+                    <span>Среднее: <b id="avgDisplay">0</b></span>
+                </div>
+                <ul id="numberList"></ul>
+            </div>
+        </section>
+
+        <!-- ЗАДАЧА 5: Проверка пароля -->
+        <section id="task5">
+            <h2>Задача 5. Проверка пароля</h2>
+            <div class="task-body">
+                <input type="password" id="passwordInput" placeholder="Введите пароль">
+                <button id="checkPasswordBtn">Проверить</button>
+                <div id="passwordResult" class="result-block"></div>
+            </div>
+        </section>
+
+        <!-- ЗАДАЧА 6: Генератор списка пунктов меню -->
+        <section id="task6">
+            <h2>Задача 6. Генератор списка пунктов меню</h2>
+            <div class="task-body">
+                <button id="generateMenuBtn">Сгенерировать меню</button>
+                <nav id="menuNav"></nav>
+            </div>
+        </section>
+
+        <!-- ЗАДАЧА 7: Область видимости -->
+        <section id="task7">
+            <h2>Задача 7. Область видимости</h2>
+            <div class="task-body">
+                <p>Откройте консоль (F12), чтобы увидеть вывод.</p>
+                <button id="scopeDemoBtn">Показать пример в консоли</button>
+                <div id="scopeOutput" class="result-block"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Все задачи реализованы на чистом JS, CSS и HTML.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
